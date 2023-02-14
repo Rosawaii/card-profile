@@ -1,7 +1,17 @@
+/* stylelint-disable-next-line import-notation */
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+
+body {
+  background-image: linear-gradient(45deg, orange, pink, orange);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
 .container {
   display: flex;
   justify-content: center;
-  align-content: center;
+  height: 98vh;
+  align-items: center;
 }
 
 .card {
@@ -11,8 +21,12 @@
   flex-direction: column;
   justify-content: flex-start;
   align-content: center;
-  border: 1px solid black;
+  border: 2px solid rgb(103 40 40);
   text-align: center;
+  font-family: Ubuntu, sans-serif;
+  border-radius: 5px;
+  box-shadow: 10px 5px 5px rgb(103 40 40/ 47.9%);
+  background: rgb(256 256 256 / 35%);
 }
 
 .header {
@@ -23,18 +37,83 @@
   width: 100%;
   height: 250px;
   background-size: 100% 250px;
+  border-bottom: 4px solid rgb(103 40 40);
 }
 
 .profile-pic {
   background-image: url("kj_icon.jpg");
-  border: 4px solid black;
+  border: 4px solid rgb(103 40 40);
   width: 128px;
   height: 128px;
   background-size: contain;
   background-repeat: no-repeat;
-  border-radius: 100%;
+  border-radius: 50%;
+  translate: 0 140px;
+}
+
+.username {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.fa-solid {
+  width: 22px;
+  height: 22px;
+  background-color: rgb(103 40 40);
+}
+
+.location {
+  font-size: 1.2em;
+  font-weight: lighter;
+  color: rgb(103 40 40);
+}
+
+.location span {
+  font-style: italic;
+}
+
+.user-description {
+  font-weight: lighter;
+  margin: 0 36px;
+}
+
+.follow-button {
+  border: 3px solid rgb(103 40 40);
+  background-color: none;
+  filter: brightness(1.1);
+  mix-blend-mode: multiply;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.follow-button:hover {
+  background-color: rgb(103 40 40 / 39.1%);
 }
 
 .footer {
+  display: flex;
+  align-self: flex-end;
+  align-items: flex-end;
+  justify-content: space-around;
+  width: 449px;
+  margin-top: 30px;
+}
 
+.footer u {
+  color: rgb(103 40 40);
+}
+
+.posts {
+  border-right: 2px solid rgb(103 40 40);
+}
+
+.followers {
+  border-right: 2px solid rgb(103 40 40);
+}
+
+.square {
+  width: 150px;
+  height: 50px;
+  border-top: 2px solid rgb(103 40 40);
+  padding-bottom: 21.5px;
 }
